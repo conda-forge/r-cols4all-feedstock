@@ -1,4 +1,4 @@
-{% set version = "0.9" %}
+{% set version = "0.10" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cols4all_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cols4all/cols4all_{{ version }}.tar.gz
-  sha256: 6343255ad93f8164d20de8361aa6a4977714d706bd4293f2bb5ef50c3dfb450e
+  sha256: 8059526db7f4b29bf99460f674f1815b97f6a4614e28f426be9218a9080a62b8
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
